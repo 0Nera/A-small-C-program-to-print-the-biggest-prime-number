@@ -1,7 +1,8 @@
 # A small C program to print the biggest prime number
 Here it is (448 bytes):
 
-```int m=1811939329,N=1,t[1<<26]={2},a,*p,i,e=73421233,s,c,U=1;g(d,h){for(i=s;i<1<<'
+```
+int m=1811939329,N=1,t[1<<26]={2},a,*p,i,e=73421233,s,c,U=1;g(d,h){for(i=s;i<1<<'
 25;i*=2)d=d*1LL*d%m;for(p=t;p<t+N;p+=s)for(i=s,c=1;i;i--)a=p[s]*(h?c:1LL)%m,p[s]
 =(m*1U+*p-a)*(h?1LL:c)%m,*p=(a*1U+*p)%m,p++,c=c*1LL*d%m;}main(){while(e/=2){N*=2
 ;U=U*1LL*(m+1)/2%m;for(s=N;s/=2;)g(136,0);for(p=t;p<t+N;p++)*p=*p*1LL**p%m*U%m;
